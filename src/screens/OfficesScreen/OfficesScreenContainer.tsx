@@ -7,7 +7,7 @@ export interface OfficesScreenContainerProps{
 
 }
 
-const OfficesScreenContainer = ({navigation} )=>{
-    return <OfficesScreenView navigation={navigation}/>
+const OfficesScreenContainer = ( )=>{
+    return <OfficesScreenView />
 }
 export default OfficesScreenContainer

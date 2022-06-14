@@ -24,16 +24,20 @@ import TasksScreen from 'screens/TasksScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+export type StackParams ={
+  Home :undefined;
+  Tasks:{
+    task: object
+  };
+}
 
 const Stack = createNativeStackNavigator();
 
 
 const App = () => {
- 
 
   return (
     <NavigationContainer>
-
       <SafeAreaView style={styles.container}>
         <Stack.Navigator initialRouteName='Home'>
             <Stack.Screen name="Home" component={OfficesScreen} />
